@@ -7,87 +7,92 @@
     font-family: my-cool-font, sans-serif;
   } */
 
-  * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-  }
-  
-  @import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
-  
-  body {
-    font-family: "Roboto", sans-serif;
-    overflow-x: hidden;
-  }
-  
-  label {
-    display: flex;
-    flex-direction: column;
-    width: 15rem;
-    margin-bottom: 15px;
-  }
-  input {
-    width: 10vw;
-  }
-  
-  form {
-    display: flex;
-    flex-flow: row wrap;
-    gap: 1rem;
-    font-size: 1rem;
-  }
-  
-  .content {
-    width: 99vw;
-    height: 98vh;
-    display: flex;
-    flex-direction: row;
-  }
-  
-  .left {
-    background-image: url("https://images.unsplash.com/photo-1571329920889-5aa7a3e07e88?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80");
-    background-repeat: no-repeat;
-    background-size: cover;
-    height: 100vh;
-    width: 40%;
-  }
-  
-  .right {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    align-content: flex-start;
-    justify-content: center;
-    background-color: rgb(247, 247, 247);
-    width: 60%;
-  }
-  
-  .row {
-    display: flex;
-    flex: 1;
-    flex-direction: row;
-  }
-  
-  .copy {
-    margin-left: 2rem;
-  }
-  
-  .form-section {
-    background-color: #fff;
-    box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.25);
-    height: 400px;
-    width: 100%;
-    padding-left: 2em;
-    padding-top: 4em;
-  }
-  
-  .input-section {
-    display: flex;
-    width: 60vw;
-    justify-content: center;
-    flex-direction: column;
-    background-color: white;
-    padding: 1.2rem 2vw 3rem 2vw;
-    box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.123);
-  }
-  
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Bebas Neue';
+}
+
+
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+
+body {
+  overflow-x: hidden;
+}
+
+label {
+  display: flex;
+  flex-direction: column;
+  width: 15rem;
+  margin-bottom: 15px;
+}
+
+input {
+  width: 20vw;
+  height: 32px;
+  border-width: 1px;
+  border-radius: 4px;
+}
+
+form {
+  width: 60vw;
+  display: flex;
+  flex-flow: row wrap;
+  gap: 1rem;
+  font-size: 1rem;
+}
+
+.content {
+  width: 99vw;
+  height: 98vh;
+  display: flex;
+  flex-direction: row;
+}
+
+.left {
+  background-image: url("https://images.unsplash.com/photo-1571329920889-5aa7a3e07e88?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80");
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100vh;
+  width: 40%;
+}
+
+.right {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  align-content: flex-start;
+  justify-content: center;
+  background-color: rgb(247, 247, 247);
+  width: 60%;
+}
+
+.row {
+  display: flex;
+  flex: 1;
+  flex-direction: row;
+}
+
+.copy {
+  margin-left: 2rem;
+}
+
+.form-section {
+  background-color: #fff;
+  box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.25);
+  height: 400px;
+  width: 100%;
+  padding-left: 2em;
+  padding-top: 4em;
+}
+
+.input-section {
+  display: flex;
+  width: 60vw;
+  justify-content: center;
+  flex-direction: column;
+  background-color: white;
+  padding: 1.2rem 2vw 3rem 2vw;
+  box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.123);
+}
