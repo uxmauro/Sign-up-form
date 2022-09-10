@@ -6,20 +6,25 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles.css">
+    <script src="script.js"></script>
     <title>Sign Up Form</title>
+    <link rel="icon" type="image/png" href="assets/logo.png">
 </head>
 
 <body>
     <div class="content">
         <div class="left">
+            <div class="logo-section">
 
+                <img src="../assets/odin-lined.png" alt="odin-logo">
+            </div>
         </div>
         <div class="right">
-            <h3 class="copy">This is not a real online service! You know you need something<br>
+            <h2 class="copy">This is not a real online service! You know you need something<br>
                 like this in your life to help you realize your deepest dreams.<br>
-                Sign up <em>now</em> to get started.<br>You <em>know</em> you want to.</h3>
+                Sign up <em> now </em> to get started.<br> You <em> know </em> you want to. </h2>
             <div class="form-section">
-                <form>
+                <form onsubmit="return verifyPassword()">
                     <div class="top-left">
                         <label for="FirstName"> First Name </label>
                         <input id="FirstName" type="text">
@@ -30,7 +35,7 @@
                     </div>
                     <div class="mid-left">
                         <label for="Email"> Email </label>
-                        <input id="Email" type="text">
+                        <input type="email" id="email" name="email">
                     </div>
                     <div class="mid-right">
                         <label for="Phone Number"> Phone Number </label>
@@ -38,18 +43,20 @@
                     </div>
                     <div class="bottom-left">
                         <label for="Password"> Password </label>
-                        <input id="Password" type="text">
+                        <input id="Password" type="password" required>
+                        <div class="bottom-form-section">
+                            <div id="message"></div>
+                            <button class=" signup-button" type="submit" id="submit">Create Account</button>
+                            <p>Already have an account? <a href="#">Log in</a></p>
+                        </div>
                     </div>
                     <div class="bottom-right">
                         <label for="Confirm-Password"> Confirm Password </label>
-                        <input id="Confirm-Password" type="text">
+                        <input id="Confirm-Password" type="password" required>
                     </div>
                 </form>
 
-                <div class="bottom-form-section">
-                    <button class="signup-button">Create Account</button>
-                    <p>Already have an account? <a href="#">Log in</a></p>
-                </div>
+
 
                 <!-- header>nav>ul>p*5{texts} -->
                 <!-- header>nav>ul>p*5{texts $$} -->
